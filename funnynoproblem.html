@@ -9,38 +9,45 @@
       font-family: "Helvetica Neue", Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
-      padding: 0;
-      background: #f5f5f5;
+      background-color: #f8f8f8;
+      color: #333;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
       text-align: center;
     }
     nav {
-      background: #444;
+      background-color: #444;
       color: white;
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 10px;
+      padding: 12px 0;
     }
     nav a {
       color: white;
       text-decoration: none;
     }
     main {
+      max-width: 900px;
+      margin: 0 auto;
       padding: 20px;
-      max-width: 800px;
-      margin: auto;
       background: white;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
     h1, h2 {
-      color: #333;
+      color: #222;
     }
     footer {
-      background: #222;
+      background-color: #222;
       color: white;
       text-align: center;
       padding: 10px;
@@ -52,45 +59,59 @@
 
   <header>
     <h1>面白大丈夫</h1>
-    <p>日本喜劇節目簡介</p>
+    <p>台灣漫才暨搞笑短劇表演團體</p>
   </header>
 
   <nav>
-    <a href="#intro">節目簡介</a>
-    <a href="#content">節目內容</a>
-    <a href="#hosts">歷代主持</a>
-    <a href="#references">參考資料</a>
+    <a href="#about">關於我們</a>
+    <a href="#history">創團經歷</a>
+    <a href="#team">成員介紹</a>
+    <a href="#ref">參考資料</a>
   </nav>
 
   <main>
-    <section id="intro">
-      <h2>節目簡介</h2>
-      <p>《面白大丈夫》（日語：面白(おもしろ)大丈夫(だいじょうぶ)）是日本富士電視台於1980年代初期製播的綜藝節目，以漫才為主軸，具有濃厚的大阪喜劇風格，並推動了許多搞笑藝人的發展。</p>
+    <section id="main-visual">
+      <img src="20250216_133912042_iOS.jpg" alt="面白大丈夫團隊合照">
     </section>
 
-    <section id="content">
-      <h2>節目內容</h2>
-      <p>節目內容以短劇、漫才、模仿秀為主，常見單元有「搞笑短劇」、「雙人漫才對決」、「新人發掘單元」等。</p>
+    <section id="about">
+      <h2>關於「面白大丈夫」</h2>
+      <p>
+        「面白大丈夫」是由諧星團體「搞笑救星」中的董任軒（董軒）與林耿賢（耿賢），以及「森量」中的蔡惟量（阿量）與林木森（木森）所組成的台灣漫才暨搞笑短劇表演的劇團。
+      </p>
+      <p>
+        2022年6月23日，成員西追宣布離團（參加演出至當年8月28日）。同年7月14日，諧星林木森（原名林東緒）加入，與阿量搭檔「森量」漫才組合。現有團隊四人持續巡演、經營網路影音頻道，並推出漫才作品。
+      </p>
     </section>
 
-    <section id="hosts">
-      <h2>歷代主持</h2>
+    <section id="history">
+      <h2>創團經歷</h2>
+      <p>
+        董軒與耿賢為大學同學，西追與阿量為高中同學，四人2013年結緣於台灣第一個漫才表演團體「魚蹦興業」，後來因相繼離團而淡出表演界，轉為上班族。
+      </p>
+      <p>
+        2017年底，四人再度聚首，共同合作創作網路搞笑短劇。2018年，他們以自身「上班族」身份，將2016年「搞笑救星 × 林東緒」在囍吧表演的《職男人生》劇目延伸創作，推出《職男人生2之搞笑重啟》，開啟現場演出巡演。2019年1月，「面白大丈夫」正式成立。
+      </p>
+    </section>
+
+    <section id="team">
+      <h2>成員介紹</h2>
       <ul>
-        <li>橫山靖弘（橫山やすし）</li>
-        <li>西川潔（西川きよし）</li>
-        <li>島田紳助</li>
-        <li>明石家秋刀魚</li>
+        <li>董任軒（董軒） - 搞笑救星</li>
+        <li>林耿賢（耿賢） - 搞笑救星</li>
+        <li>蔡惟量（阿量） - 森量</li>
+        <li>林木森（木森） - 森量（原名林東緒）</li>
       </ul>
     </section>
 
-    <section id="references">
+    <section id="ref">
       <h2>參考資料</h2>
-      <p>資料來源請參見 <a href="https://zh.wikipedia.org/zh-tw/%E9%9D%A2%E7%99%BD%E5%A4%A7%E4%B8%88%E5%A4%AB" target="_blank">維基百科條目</a>。</p>
+      <p>參考維基百科條目：<a href="https://zh.wikipedia.org/zh-tw/%E9%9D%A2%E7%99%BD%E5%A4%A7%E4%B8%88%E5%A4%AB" target="_blank">面白大丈夫</a></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 面白大丈夫 非官方網頁 | 此網站僅作參考用途</p>
+    <p>© 2025 面白大丈夫｜非官方粉絲頁製作</p>
   </footer>
 
 </body>
