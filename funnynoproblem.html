@@ -1,118 +1,101 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>面白大丈夫</title>
+  <meta charset="UTF-8">
+  <title>面白大丈夫 | 官方網站</title>
   <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-    header {
-      background-color: #222;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #444;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 12px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      background: white;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-    h1, h2 {
-      color: #222;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-    }
+    body { font-family: "微軟正黑體", sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; }
+    header { background: #004488; color: white; padding: 1em; text-align: center; }
+    nav { background: #03365e; text-align: center; padding: 0.5em; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 2em; max-width: 900px; margin: auto; background: white; }
+    h1, h2, h3 { color: #004488; }
+    .carousel { display: flex; overflow-x: auto; gap: 1em; padding: 1em 0; }
+    .carousel img { height: 200px; border-radius: 8px; }
+    .members table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+    .members th, .members td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+    .bg-image { background: url('背景圖片網址') no-repeat center center / cover; padding: 6em 0; color: white; text-align: center; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>面白大丈夫</h1>
-    <p>台灣漫才暨搞笑短劇表演團體</p>
-  </header>
+<header>
+  <h1>面白大丈夫</h1>
+  <p>台灣漫才暨搞笑短劇表演團體</p>
+</header>
 
-  <nav>
-    <a href="#about">關於我們</a>
-    <a href="#history">創團經歷</a>
-    <a href="#team">成員介紹</a>
-    <a href="#ref">參考資料</a>
-  </nav>
+<nav>
+  <a href="#about">簡介</a>
+  <a href="#members">團員介紹</a>
+  <a href="#photos">演出相片</a>
+</nav>
 
-  <main>
-    <section id="main-visual">
-      <img src="20250216_133912042_iOS.jpg" alt="面白大丈夫團隊合照">
-    </section>
+<section id="about">
+  <h2>簡介</h2>
+  <p>「面白大丈夫」是由諧星團體「搞笑救星」的董任軒（董軒）、林耿賢（耿賢）以及「森量」的蔡惟量（阿量）、林木森（木森）組成的台灣漫才暨搞笑短劇表演團體。</p>
+  <p>成員於2013年在「魚蹦興業」相識，並於2019年正式創團。2022年，西追離團，林木森加入與阿量組成「森量」。目前四人持續巡演，製作短劇、漫才演出與網路影音作品。</p>
+</section>
 
-    <section id="about">
-      <h2>關於「面白大丈夫」</h2>
-      <p>
-        「面白大丈夫」是由諧星團體「搞笑救星」中的董任軒（董軒）與林耿賢（耿賢），以及「森量」中的蔡惟量（阿量）與林木森（木森）所組成的台灣漫才暨搞笑短劇表演的劇團。
-      </p>
-      <p>
-        2022年6月23日，成員西追宣布離團（參加演出至當年8月28日）。同年7月14日，諧星林木森（原名林東緒）加入，與阿量搭檔「森量」漫才組合。現有團隊四人持續巡演、經營網路影音頻道，並推出漫才作品。
-      </p>
-    </section>
+<section id="members" class="members">
+  <h2>團員介紹</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>團員</th><th>本名</th><th>職稱</th><th>在團年</th><th>生日</th><th>特色</th><th>學歷</th><th>經歷</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>董軒</td><td>董任軒</td><td>團長</td><td>2019～現今</td><td>1989.04.02</td>
+        <td>體型非常圓，痛風權威。</td>
+        <td>台師大資工碩</td>
+        <td>魚蹦興業、搞笑者們1.0～3.0</td>
+      </tr>
+      <tr>
+        <td>耿賢</td><td>林耿賢</td><td>劇本統籌</td><td>2019～現今</td><td>1989.01.06</td>
+        <td>瞇瞇眼破音系，冷笑匠。</td>
+        <td>台中教育大學資工</td>
+        <td>魚蹦興業</td>
+      </tr>
+      <tr>
+        <td>阿量</td><td>蔡惟量</td><td>副團長</td><td>2019～現今</td><td>1989.09.13</td>
+        <td>怕生、舞台爆汗男。</td>
+        <td>世新口語傳播</td>
+        <td>魚蹦興業、搞笑者們</td>
+      </tr>
+      <tr>
+        <td>木森</td><td>林木森（林東緒）</td><td>新團員</td><td>2022～現今</td><td>1986.02.17</td>
+        <td>魔性笑聲，常笑場。</td>
+        <td>台藝大戲劇系</td>
+        <td>屏風、故事工廠、搞笑者們導演</td>
+      </tr>
+      <tr>
+        <td>西追（離團）</td><td>陳挺遠</td><td>創辦人之一</td><td>2019～2022</td><td>1990.08.08</td>
+        <td>過敏原人帥哥。</td>
+        <td>海洋大學商船系</td>
+        <td>魚蹦興業</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
-    <section id="history">
-      <h2>創團經歷</h2>
-      <p>
-        董軒與耿賢為大學同學，西追與阿量為高中同學，四人2013年結緣於台灣第一個漫才表演團體「魚蹦興業」，後來因相繼離團而淡出表演界，轉為上班族。
-      </p>
-      <p>
-        2017年底，四人再度聚首，共同合作創作網路搞笑短劇。2018年，他們以自身「上班族」身份，將2016年「搞笑救星 × 林東緒」在囍吧表演的《職男人生》劇目延伸創作，推出《職男人生2之搞笑重啟》，開啟現場演出巡演。2019年1月，「面白大丈夫」正式成立。
-      </p>
-    </section>
+<section id="photos">
+  <h2>演出花絮</h2>
+  <div class="carousel">
+    <img src="uploads/20250216_133912042_iOS.jpg" alt="成員合照">
+    <img src="uploads/IMG_0312.JPG" alt="現場演出 1">
+    <img src="uploads/IMG_0852.JPG" alt="現場演出 2">
+  </div>
+</section>
 
-    <section id="team">
-      <h2>成員介紹</h2>
-      <ul>
-        <li>董任軒（董軒） - 搞笑救星</li>
-        <li>林耿賢（耿賢） - 搞笑救星</li>
-        <li>蔡惟量（阿量） - 森量</li>
-        <li>林木森（木森） - 森量（原名林東緒）</li>
-      </ul>
-    </section>
+<section class="bg-image">
+  <h2>《職男人生》系列 巡演中</h2>
+  <p>職場 X 搞笑 X 情感的交叉點。</p>
+</section>
 
-    <section id="ref">
-      <h2>參考資料</h2>
-      <p>參考維基百科條目：<a href="https://zh.wikipedia.org/zh-tw/%E9%9D%A2%E7%99%BD%E5%A4%A7%E4%B8%88%E5%A4%AB" target="_blank">面白大丈夫</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 面白大丈夫｜非官方粉絲頁製作</p>
-  </footer>
+<footer style="text-align:center; padding:1em; background:#f0f0f0; font-size:0.9em;">
+  © 2019–2025 面白大丈夫 | 本網站由粉絲製作
+</footer>
 
 </body>
 </html>
