@@ -1,76 +1,159 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>面白大丈夫</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>面白大丈夫 - 官方介紹網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+      color: #333;
+    }
+
+    header {
+      background-color: #ffcc00;
+      color: #000;
+      text-align: center;
+      padding: 1em 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      height: 60vh;
+      position: relative;
+    }
+
+    .carousel img {
+      width: 100%;
+      object-fit: cover;
+      animation: slide 42s infinite;
+    }
+
+    @keyframes slide {
+      0% {transform: translateX(0);}
+      14% {transform: translateX(-100%);}
+      28% {transform: translateX(-200%);}
+      42% {transform: translateX(-300%);}
+      56% {transform: translateX(-400%);}
+      70% {transform: translateX(-500%);}
+      84% {transform: translateX(-600%);}
+      100% {transform: translateX(0);}
+    }
+
+    .container {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      background: #fff8dc;
+      border-radius: 10px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .member {
+      display: flex;
+      align-items: center;
+      margin-top: 1.5em;
+    }
+
+    .member img {
+      width: 180px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 1em;
+      object-fit: cover;
+    }
+
+    h2 {
+      color: #cc3300;
+    }
+
+    footer {
+      background-color: #ffcc00;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Hero Banner -->
-  <header class="hero">
-    <h1>面白大丈夫</h1>
-    <p>台灣漫才與搞笑短劇劇團</p>
+  <header>
+    面白大丈夫
   </header>
 
-  <!-- 輪播圖片 -->
-  <section class="carousel">
-    <img src="IMG_0048.JPG" class="carousel-img active" />
-    <img src="IMG_0155.JPG" class="carousel-img" />
-    <img src="IMG_0738.JPG" class="carousel-img" />
-    <img src="IMG_0312.JPG" class="carousel-img" />
-    <img src="IMG_0852.JPG" class="carousel-img" />
-  </section>
+  <div class="carousel">
+    <img src="IMG_0048.JPG" alt="表演照片1">
+    <img src="IMG_0155.JPG" alt="表演照片2">
+    <img src="IMG_0738.JPG" alt="表演照片3">
+    <img src="IMG_0312.JPG" alt="表演照片4">
+    <img src="IMG_0852.JPG" alt="表演照片5">
+    <img src="IMG_1006.JPG" alt="表演照片6">
+  </div>
 
-  <!-- 團體簡介 -->
-  <section class="section colorful">
-    <h2>簡介</h2>
-    <p>面白大丈夫由搞笑救星的董軒、耿賢與森量的阿量、木森組成，是台灣漫才暨搞笑短劇表演團體。</p>
-    <p>2019年創立後持續巡演、經營網路影音頻道，並推出漫才作品。</p>
-  </section>
+  <div class="container">
+    <div class="section">
+      <h2>團體簡介</h2>
+      <p>面白大丈夫是由諧星團體「搞笑救星」中的董任軒（董軒）與林耿賢（耿賢），以及「森量」中的蔡惟量（阿量）與林木森（木森）所組成的台灣漫才暨搞笑短劇表演劇團。</p>
+      <p>四人於 2013 年結緣於台灣第一個漫才表演團體「魚蹦興業」，2019 年正式創辦「面白大丈夫」，持續創作搞笑短劇與漫才演出。</p>
+    </div>
 
-  <!-- 成員表 -->
-  <section class="section">
-    <h2>成員介紹</h2>
-    <div class="members">
-      <div class="member-card">
-        <h3>董軒（董任軒）</h3>
-        <p>團長｜1989.04.02｜台師大資工碩</p>
-        <p>痛風權威、圓滾滾的體型，搞笑靈魂滿滿。</p>
+    <div class="section">
+      <h2>成員介紹</h2>
+
+      <div class="member">
+        <img src="IMG_0048.JPG" alt="董軒">
+        <div>
+          <h3>董軒（董任軒） - 團長</h3>
+          <p>生日：1989.04.02｜學歷：台師大資工碩士<br>痛風權威、吃貨代表，搞笑者們1.0～3.0主要成員。</p>
+        </div>
       </div>
-      <div class="member-card">
-        <h3>耿賢（林耿賢）</h3>
-        <p>劇本統籌｜1989.01.06｜台中教育大學</p>
-        <p>瞇瞇眼＋魔羯笑匠，冷面重鹹雙拼。</p>
+
+      <div class="member">
+        <img src="IMG_0312.JPG" alt="耿賢">
+        <div>
+          <h3>耿賢（林耿賢） - 劇本統籌</h3>
+          <p>生日：1989.01.06｜學歷：台中教育大學資工系<br>冷面笑匠，黃腔高手，搞笑者們主力成員。</p>
+        </div>
       </div>
-      <div class="member-card">
-        <h3>阿量（蔡惟量）</h3>
-        <p>副團長｜1989.09.13｜世新口傳系</p>
-        <p>舞台上流汗達人，垃圾話輸出王。</p>
+
+      <div class="member">
+        <img src="IMG_0738.JPG" alt="阿量">
+        <div>
+          <h3>阿量（蔡惟量） - 副團長</h3>
+          <p>生日：1989.09.13｜學歷：世新大學口語傳播學系<br>怕生靠垃圾話舒壓，台上一動就汗如雨下。</p>
+        </div>
       </div>
-      <div class="member-card">
-        <h3>木森（林木森）</h3>
-        <p>新團員｜1986.02.17｜台藝大戲劇系</p>
-        <p>笑聲魔性，愛笑場，自由奔放的演員魂。</p>
+
+      <div class="member">
+        <img src="IMG_0155.JPG" alt="木森">
+        <div>
+          <h3>木森（林木森） - 新團員</h3>
+          <p>生日：1986.02.17｜學歷：台藝大戲劇系<br>魔性笑聲＋性感魅力，台上常笑場！</p>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="IMG_0852.JPG" alt="西追">
+        <div>
+          <h3>西追（陳挺遠） - 創辦成員（已離團）</h3>
+          <p>生日：1990.08.08｜學歷：海洋大學商船系<br>帥哥代表，與阿量曾組「過敏原人」。</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
   <footer>
-    <p>© 面白大丈夫 Funny Man 2025</p>
+    &copy; 2025 面白大丈夫 | 設計參考 Wikipedia 與 Funny No Problem 官方網站
   </footer>
-
-  <script>
-    // 圖片輪播
-    let index = 0;
-    const slides = document.querySelectorAll('.carousel-img');
-    setInterval(() => {
-      slides[index].classList.remove('active');
-      index = (index + 1) % slides.length;
-      slides[index].classList.add('active');
-    }, 3000);
-  </script>
 </body>
 </html>
