@@ -1,141 +1,152 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>介紹《面白大丈夫》——台灣漫材的魅力與精神</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
       margin: 0;
-      padding: 0;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background: linear-gradient(135deg, #fff0f5, #ffe4b5);
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      min-height: 600px;
-    }
-    .slide {
-      display: none;
-    }
-    .slide.active {
-      display: block;
-    }
-    .controls {
+
+    header {
+      background: #ff69b4;
+      color: white;
+      padding: 25px;
       text-align: center;
-      margin-top: 20px;
+      font-size: 36px;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     }
-    button {
-      padding: 10px 20px;
+
+    .nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .nav button {
+      background: #ffa500;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 20px;
+      margin: 5px;
       font-size: 16px;
-      margin: 0 10px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
     }
-    img {
+
+    .nav button:hover {
+      background: #ff7f50;
+    }
+
+    .section {
+      display: none;
+      padding: 20px;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    .active {
       display: block;
-      margin: 20px auto;
+    }
+
+    img {
       max-width: 100%;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 0 10px rgba(255,105,180,0.3);
+    }
+
+    .text-box {
+      background-color: #ffffe0;
+      border: 3px dashed #ffb6c1;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 15px auto;
+      max-width: 900px;
+      line-height: 1.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <h1>面白大丈夫</h1>
 
-  <div class="container">
+  <header>面白大丈夫</header>
 
-    <div id="slide1" class="slide active">
-      <h2>1.面白大丈夫簡介</h2>
-  <p>面白大丈夫是由諧星團體「搞笑救星」中的董任軒（董軒）與林耿賢（耿賢），以及「森量」中的蔡惟量（阿量）與林木森（木森）所組成的台灣漫才暨搞笑短劇表演的劇團。</p>
-  <p>2022年6月23日，西追宣布離團（參加演出至當年8月28日），2022年7月14日，諧星林木森（原名林東緒）加入，與阿量搭檔「森量」漫才組合。</p>
-  <p>現有團隊四人持續巡演、經營網路影音頻道，並推出漫才作品。</p>
-  
-  <p>董軒與耿賢為大學同學，西追與阿量為高中同學，四人2013年結緣於台灣第一個漫才表演團體「魚蹦興業」，因相繼離團而淡出表演界，各自成為上班族。</p>
-  <p>2017年底，四人再度聚首，共同合作創作網路搞笑短劇，2018年取成員「上班族」身份，以2016年搞笑救星×林東緒在囍吧（林東緒所經營的酒吧，現已關閉）表演的《職男人生》劇目進行延伸創作，推出《職男人生2之搞笑重啟》，展開《職男人生》系列的現場演出巡演，並於2019年1月正式創辦「面白大丈夫」。</p>
-      <img src="m11.jpg" alt="與面白的合照" />
-      <div class="controls">
-        <button id="prev1" disabled>上一頁</button>
-        <button id="next1">下一頁</button>
-      </div>
+  <div class="nav">
+    <button onclick="showSection('page1')">首頁</button>
+    <button onclick="showSection('page2')">職男人生</button>
+    <button onclick="showSection('page3')">面白放送</button>
+    <button onclick="showSection('page4')">面粉趴</button>
+    <button onclick="showSection('page5')">自拍互動</button>
+  </div>
+
+  <!-- 第一頁：團體簡介 -->
+  <div id="page1" class="section active">
+    <img src="m11.jpg" alt="與面白大丈夫合照">
+    <div class="text-box">
+      <p><strong>面白大丈夫</strong>是由諧星團體「搞笑救星」中的董任軒（董軒）與林耿賢（耿賢），以及「森量」中的蔡惟量（阿量）與林木森（木森）所組成的台灣漫才暨搞笑短劇表演的劇團。</p>
+      <p>2022年6月23日，西追宣布離團（參加演出至當年8月28日），2022年7月14日，諧星林木森（原名林東緒）加入，與阿量搭檔「森量」漫才組合。現有團隊四人持續巡演、經營網路影音頻道，並推出漫才作品。</p>
+      <p>董軒與耿賢為大學同學，西追與阿量為高中同學，四人2013年結緣於台灣第一個漫才表演團體「魚蹦興業」，因相繼離團而淡出表演界，各自成為上班族。2017年底，四人再度聚首，共同合作創作網路搞笑短劇，2018年取成員「上班族」身份，以2016年搞笑救星×林東緒在囍吧（林東緒所經營的酒吧，現已關閉）表演的《職男人生》劇目進行延伸創作，推出《職男人生2之搞笑重啟》，展開《職男人生》系列的現場演出巡演，並於2019年1月正式創辦「面白大丈夫」。</p>
     </div>
+  </div>
 
-    <div id="slide2" class="slide">
-      <h2>2.職男人生</h2>
-  <p>職男人生系列是以日式搞笑風格為主的表演，內容包含漫才和短劇兩種形式，主要由4位演員董軒、耿賢、阿量、木森自編自導自演。</p>
-  <p>於2019年創團，目前全台累積超過30萬人票房。</p>
-  <p>曾與全台威秀影城合作，開創舞台劇在影城演出的特別體驗。</p>
-  <p>職男人生系列目前已至全台7縣市巡演，邀請各位觀眾一同進入捧腹大笑的世界。</p>
-   <img src="m1.JPG"  />
-   <img src="m2.JPG"  />
-   <img src="m3.JPG"  />
-   <img src="m5.JPG"  />
-   <img src="m7.JPG"  />
-   <div class="controls">
-          <button id="prev2">上一頁</button>
-          <button id="next2">下一頁</button>
-      </div>
-    </div>
+  <!-- 第二頁：職男人生 -->
+  <div id="page2" class="section">
+    <h2 style="text-align:center;">演出作品：《職男人生》</h2>
+    <p>職男人生系列是以日式搞笑風格為主的表演，內容包含漫才和短劇兩種形式，主要由4位演員董軒、耿賢、阿量、木森自編自導自演。</p>
+    <p>於2019年創團，目前全台累積超過30萬人票房。</p>
+    <p>曾與全台威秀影城合作，開創舞台劇在影城演出的特別體驗。</p>
+    <p>職男人生系列目前已至全台7縣市巡演，邀請各位觀眾一同進入捧腹大笑的世界。</p>
+      <img src="m1.JPG" alt="職男人生 演出照片1">
+      <img src="m2.JPG" alt="職男人生 演出照片2">
+      <img src="m3.JPG" alt="職男人生 演出照片3">
+      <img src="m5.JPG" alt="職男人生 演出照片4">
+      <img src="m7.JPG" alt="職男人生 演出照片5">
+  </div>
 
-    <div id="slide3" class="slide">
-      <h2>3.面白放送</h2>
-  <p>繼職男人生、面粉趴、搞笑對抗賽之後</p>
-  <p>面白大丈夫首度嘗試，開放觀眾參與Youtube企劃錄影，</p>
-  <p>平常網路上看不到的、被剪掉的、冷場的、不能播的在這裡全面放送！</p>
-    <img src="m13.JPG" />
-    <img src="m16.JPG" />  
-      <div class="controls">
-        <button id="prev3">上一頁</button>
-        <button id="next3">下一頁</button>
-      </div>
-    </div>
+  <!-- 第三頁：面白放送 -->
+  <div id="page3" class="section">
+    <h2 style="text-align:center;">面白放送</h2>
+    <p>繼職男人生、面粉趴、搞笑對抗賽之後</p>
+    <p>面白大丈夫首度嘗試，開放觀眾參與Youtube企劃錄影，</p>
+    <p>平常網路上看不到的、被剪掉的、冷場的、不能播的在這裡全面放送！</p>
+      <img src="m13.JPG" alt="面白放送 照片1">
+      <img src="m16.JPG" alt="面白放送 照片2">
+  </div>
 
-    <div id="slide4" class="slide">
-      <h2>4.面粉趴</h2>
-  <p>面白大丈夫劇團繼職男人生系列後，又一全新嘗試，現場即興節目-面粉趴。</p>
-  <p>沒有劇本，沒有台詞，只有一個又一個的現場企劃，四位成員的搞笑實力直接見真章，全場爆笑還是尷尬冷場，就在一瞬之間！</p>
-      <img src="m18.JPG" />
-      <div class="controls">
-        <button id="prev4">上一頁</button>
-        <button id="next4">下一頁</button>
-      </div>
-    </div>
+  <!-- 第四頁：面粉趴 -->
+  <div id="page4" class="section">
+    <h2 style="text-align:center;">瘋狂活動：面粉趴！</h2>
+    <p>面白大丈夫劇團繼職男人生系列後，又一全新嘗試，現場即興節目-面粉趴。</p>
+    <p>沒有劇本，沒有台詞，只有一個又一個的現場企劃，四位成員的搞笑實力直接見真章，全場爆笑還是尷尬冷場，就在一瞬之間！</p>
+      <img src="m18.JPG" alt="面粉趴台中場">
+  </div>
 
-    <div id="slide5" class="slide">
-      <h2>5.自拍照或互動</h2>
-  <p>跟面白的自拍照與互動</p>
-    <img src="m8.jpg" />
-    <img src="m9.JPG" /> 
-    <img src="m10.JPG" />
-    <img src="m14.JPG" /> 
-    <img src="m15.JPG" /> 
-    <img src="m17.JPG" /> 
-      <div class="controls">
-        <button id="prev5">上一頁</button>
-        <button id="next5" disabled>下一頁</button>
-      </div>
-    </div>
-
+  <!-- 第五頁：互動自拍 -->
+  <div id="page5" class="section">
+    <h2 style="text-align:center;">與粉絲的互動與自拍</h2>
+      <img src="m8.jpg" />
+      <img src="m9.JPG" /> 
+      <img src="m10.JPG" />
+      <img src="m14.JPG" /> 
+      <img src="m15.JPG" /> 
+      <img src="m17.JPG" /> 
   </div>
 
   <script>
-    // 簡易的上一頁、下一頁控制
-    const totalSlides = 5;
-    for(let i=1; i<=totalSlides; i++) {
-      document.getElementById(`prev${i}`).onclick = () => showSlide(i-1);
-      document.getElementById(`next${i}`).onclick = () => showSlide(i+1);
-    }
-
-    function showSlide(n) {
-      if(n < 1 || n > totalSlides) return;
-      for(let i=1; i<=totalSlides; i++) {
-        document.getElementById(`slide${i}`).classList.remove('active');
-      }
-      document.getElementById(`slide${n}`).classList.add('active');
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
     }
   </script>
+
 </body>
 </html>
